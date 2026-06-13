@@ -1,7 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=https://formspree.io/f/mojzyanj">
-<script>location.replace("https://formspree.io/f/mojzyanj");</script>
-<title>Advertise on DevRoulette</title></head>
-<body style="font-family:sans-serif;background:#000;color:#ddd;text-align:center;padding-top:80px">
-Redirecting to the <a style="color:#84d13d" href="https://formspree.io/f/mojzyanj">DevRoulette ad form</a>…
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Advertise on DevRoulette</title>
+<style>
+  :root{--g:#84d13d;--cream:#ece9e0;--dim:#8b9a78;--bg:#0a0c0a;--card:#11140f;--bd:#27331f}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;background:radial-gradient(120% 80% at 50% 0%,#10140d,#000);
+       color:var(--cream);font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;
+       display:flex;align-items:center;justify-content:center;padding:32px}
+  .card{width:100%;max-width:540px;background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:34px 32px;
+        box-shadow:0 40px 100px -30px rgba(132,209,61,.12),0 30px 80px -20px rgba(0,0,0,.8)}
+  .logo{display:flex;align-items:center;gap:10px;font-size:26px;font-weight:800;letter-spacing:1px}
+  .logo .d{color:var(--g)} .logo .r{color:var(--cream)}
+  .sub{color:var(--dim);margin:10px 0 26px;font-size:14px;line-height:1.5}
+  label{display:block;font-size:13px;color:var(--dim);margin:16px 0 6px;letter-spacing:.3px}
+  input,textarea{width:100%;background:#0b0d09;border:1px solid var(--bd);border-radius:9px;color:var(--cream);
+    font-family:inherit;font-size:15px;padding:11px 13px;outline:none}
+  input:focus,textarea:focus{border-color:var(--g)}
+  textarea{min-height:110px;resize:vertical}
+  button{margin-top:24px;width:100%;background:var(--g);color:#0a0c0a;font-weight:800;font-family:inherit;
+    font-size:16px;border:0;border-radius:9px;padding:13px;cursor:pointer;letter-spacing:.5px}
+  button:hover{filter:brightness(1.08)}
+  .foot{margin-top:18px;text-align:center;font-size:12px;color:var(--dim)}
+  .foot a{color:var(--g);text-decoration:none}
+</style></head>
+<body>
+  <form class="card" action="https://formspree.io/f/mojzyanj" method="POST">
+    <div class="logo">💬 <span class="d">Dev</span><span class="r">Roulette</span></div>
+    <div class="sub">Advertise to developers right inside the chat, while they wait on their Claude Code tasks. Tell us what you'd like to run and we'll get back to you.</div>
+
+    <input type="hidden" name="_subject" value="New DevRoulette ad inquiry">
+
+    <label for="email">Your email *</label>
+    <input id="email" type="email" name="email" required placeholder="you@company.com">
+
+    <label for="name">Name / company</label>
+    <input id="name" type="text" name="company" placeholder="Acme Inc.">
+
+    <label for="budget">Monthly budget (optional)</label>
+    <input id="budget" type="text" name="budget" placeholder="e.g. $200/mo">
+
+    <label for="message">What do you want to advertise? *</label>
+    <textarea id="message" name="message" required placeholder="Product, link, and the ad text you'd like to run…"></textarea>
+
+    <button type="submit">Send ad inquiry →</button>
+    <div class="foot">DevRoulette · <a href="https://github.com/DevRoulette/DevRoulette">github.com/DevRoulette</a></div>
+  </form>
 </body></html>
